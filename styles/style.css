@@ -22,15 +22,15 @@ body {
 }
 
 h2 {
-    font-family: var(--F_escritaManual);
+    font-family: var(--F_comSerifa);
+    font-weight: 400;
 }
 
 div.question {
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 5px #00000078;
-    max-width: 80vw;
-    width: max-content;
+    width: 85vw;
     padding: 20px;
     margin: auto;
     margin-top: 25px;
@@ -38,4 +38,20 @@ div.question {
 
 div.radioButton {
     margin: 20px 0px;
+}
+
+div#button {
+    background-color: rgb(52, 52, 252);
+    height: 20px;
+    width: max-content;
+    padding: 10px;
+    margin: 40px 0px 40px calc(100vw - 150px);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 5px #00000078;
+    transition: 200ms;
+}
+
+div#button:hover {
+    background-color: rgb(30, 30, 145);
 }

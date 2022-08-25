@@ -55,3 +55,16 @@ div#button {
 div#button:hover {
     background-color: rgb(30, 30, 145);
 }
+
+div#score {
+    text-align: center;
+    background-color: white;
+    font-size: 40px;
+    width: max-content;
+    margin: auto;
+    margin-top: 18%;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #00000078;
+    border-radius: 10px;
+    font-family: var(--F_escritaManual);
+}

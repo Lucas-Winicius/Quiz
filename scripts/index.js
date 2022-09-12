@@ -1,6 +1,6 @@
 const body = document.querySelector('#questionsSpace')
 import { questions } from '../sources/questions.js';
-const questionsList = questions();
+const questionsList = questions(2);
 
 questionsList.forEach((array, index) => {
     
@@ -25,7 +25,7 @@ const checkAnswers = (a) => {
     const answersList = new Array()
 
     for(let c = 0; c < questionsList.length; c++) {
-        const answer = document.querySelector(`input[name="question${c}"]:checked`)?.value
+        const answer = document.querySelector(`input[name="question${c}"]:checked`)
         if(answer) answersList.push(answer)
     }
 
@@ -37,10 +37,15 @@ const checkAnswers = (a) => {
 
     const punctuation = { maxScore: questionsList.length, score: 0 }
     answersList.forEach((value, index) => {
-        if(value == questionsList[index].correctAnswer) punctuation.score += 1
+        console.log(value)
+        if(value.value == questionsList[index].correctAnswer) {
+            punctuation.score += 1
+            document.querySelector(`#questionNumber${index}`).style.backgroundColor = "#00a000cf"
+        }
+        else document.querySelector(`#questionNumber${index}`).style.backgroundColor = "#ff0000af"
     })
 
-    document.querySelector('body').innerHTML = `<div id="score"><p>${punctuation.score}/${punctuation.maxScore}</p></div>`
+    document.querySelector('#button').style.display = 'none'
 
 }
 addEventListener('click', (a) => checkAnswers(a))

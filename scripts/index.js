@@ -1,6 +1,6 @@
 const body = document.querySelector('#questionsSpace')
 import { questions } from '../sources/questions.js';
-const questionsList = questions(2);
+const questionsList = questions(9);
 
 questionsList.forEach((array, index) => {
     
@@ -46,6 +46,8 @@ const checkAnswers = (a) => {
     })
 
     document.querySelector('#button').style.display = 'none'
+    document.querySelector('div[pontuacao]').style.display = 'block'
+    document.querySelector('div[pontuacao]').innerHTML = `Acertos: ${punctuation.score}/${punctuation.maxScore}`
 
 }
 addEventListener('click', (a) => checkAnswers(a))

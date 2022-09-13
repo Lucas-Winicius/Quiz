@@ -13,29 +13,44 @@ export function questions(numberOfQuestions) {
             correctAnswer: 1
         },
         {
-            question: 'Quando aconteceu as mudanças das regras que deram inicio ao futebol americano',
+            question: 'Quando aconteceu as mudanças das regras que deram inicio ao futebol americano?',
             answers: ['1888', '1877', '1781', '1867'],
             correctAnswer: 3
         },
         {
-            question: 'Como e chamado o  chute inicial',
+            question: 'Como e chamado o  chute inicial?',
             answers: ['Punt', 'Kickoff', 'Play Action', 'Endzone'],
             correctAnswer: 1
         },
         {
-            question: 'Qual a principal pontuação do futebol americano',
+            question: 'Qual a principal pontuação do futebol americano?',
             answers: ['Gol', 'Touchdown', 'Endzone', 'Field Goal'],
             correctAnswer: 1
         },
         {
-            question: '',
-            answers: ['', '', '', ''],
-            correctAnswer: -1
+            question: 'Quantos equipamentos existem no futebol americano?',
+            answers: ['15', '8', '6', '9'],
+            correctAnswer: 3
         },
         {
-            question: '',
-            answers: ['', '', '', ''],
-            correctAnswer: -1
+            question: 'Qual a duração minima de uma partida completa de futebol americano?',
+            answers: ['1 Hora', '12 Minutos', '15 Minutos', '1 Hora e 20 Minutos'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Que posição e dada o nome de recebedores',
+            answers: ['Tight End', 'Middle/Inside Linebackers', 'Receiver', 'Cornerbacks'],
+            correctAnswer: 2
+        },
+        {
+            question: 'O futebol americano e resultado de sucessivas mudanças do:',
+            answers: ['Volei', 'Basquete', 'Rugby', 'Futebol Europeu'],
+            correctAnswer: 2
+        },
+        {
+            question: 'Como e dado o nome do defensor maior?',
+            answers: ['Defensive End', 'Defensive Tackle', 'Tackle, Left/Right', 'Safeties'],
+            correctAnswer: 1
         },
     ]
 

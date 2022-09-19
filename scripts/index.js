@@ -1,6 +1,7 @@
 const body = document.querySelector('#questionsSpace')
 import { questions } from '../sources/questions.js';
 const questionsList = questions(9);
+console.log(questionsList)
 
 questionsList.forEach((array, index) => {
     

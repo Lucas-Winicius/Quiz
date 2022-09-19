@@ -43,6 +43,11 @@ export function questions(numberOfQuestions) {
             correctAnswer: 2
         },
         {
+            question: 'Complete o texto: __________ é a jogada do time ofensivo em que o protagonista é o quarterback.',
+            answers: ['Play action', 'Punt', 'Receiver', 'Touchdown'],
+            correctAnswer: 0
+        },
+        {
             question: 'O futebol americano e resultado de sucessivas mudanças do:',
             answers: ['Volei', 'Basquete', 'Rugby', 'Futebol Europeu'],
             correctAnswer: 2
@@ -52,13 +57,33 @@ export function questions(numberOfQuestions) {
             answers: ['Defensive End', 'Defensive Tackle', 'Tackle, Left/Right', 'Safeties'],
             correctAnswer: 1
         },
+        {
+            question: 'Quantos jogadores entram em campo?',
+            answers: ['16', '18', '7', '11'],
+            correctAnswer: 3
+        },
+        {
+            question: 'Quantas subistituições podem ser feitas durante uma partida de futebol americano?',
+            answers: ['53', '11', 'Ilimitadas', '16'],
+            correctAnswer: 2
+        },
+        {
+            question: 'Quais são as posições de habilidade?',
+            answers: [
+                'Center, Tackle, Cornerbacks, Punt',
+                'Quarterback, Running Back, Receiver, Tight End',
+                'Running Back, Tackle, Quarterback, Receiver',
+                'Nenhum'
+            ],
+            correctAnswer: 1
+        }
     ]
 
 
-    while (randomQuestions.length <= numberOfQuestions) {
+    do {
         const index = randint(0, questions.length - 1)
-        if(!randomQuestions.includes(questions[index])) randomQuestions.push(questions[index])
-    }
+        if (!randomQuestions.includes(questions[index])) randomQuestions.push(questions[index])
+    } while (randomQuestions.length <= numberOfQuestions)
 
     return randomQuestions
 }
